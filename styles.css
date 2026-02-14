@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; }
+.card { transition: transform 0.2s; }
+.card:hover { transform: scale(1.05); }
+.gallery img { width: 100%; max-width: 300px; margin: 10px; cursor: pointer; }
+@media (max-width: 768px) { .navbar-nav { text-align: center; } }
