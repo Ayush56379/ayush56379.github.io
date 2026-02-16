@@ -1,86 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Sample Fort Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* Global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
+/* Header */
+header {
+    background: #0d6efd;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
 
-<body>
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-<!-- Header -->
-<header class="bg-primary text-white text-center py-4">
-    <h1>Fort Name Here</h1>
-</header>
+/* Search Box */
+.search-box {
+    max-width: 400px;
+    margin: 30px auto;
+}
 
-<!-- Arrow Back Button -->
-<nav class="navbar bg-light">
-    <div class="container">
-        <a href="index.html" class="back-arrow">
-            ←
-        </a>
-    </div>
-</nav>
+/* Cards */
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
 
-<!-- Main Content -->
-<main class="container my-4">
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
 
-    <p>
-        Description of the fort goes here.
-    </p>
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
 
-    <h3>History</h3>
-    <p>
-        History details here...
-    </p>
+.card-title {
+    font-weight: 600;
+    font-size: 18px;
+}
 
-    <h3>Architecture</h3>
-    <p>
-        Architecture details here...
-    </p>
+.card-text {
+    font-size: 14px;
+    color: #555;
+}
 
-    <!-- Image Gallery -->
-    <div class="row text-center mt-4">
+/* Buttons */
+.btn-primary {
+    border-radius: 6px;
+}
 
-        <div class="col-md-4 mb-3">
-            <img src="images/image1.jpg"
-                 class="img-fluid rounded shadow"
-                 alt="Image 1">
-        </div>
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 25px 0;
+    margin-top: 60px;
+    text-align: center;
+}
 
-        <div class="col-md-4 mb-3">
-            <img src="images/image2.jpg"
-                 class="img-fluid rounded shadow"
-                 alt="Image 2">
-        </div>
+footer a {
+    color: #ddd;
+    text-decoration: none;
+}
 
-        <div class="col-md-4 mb-3">
-            <img src="images/image3.jpg"
-                 class="img-fluid rounded shadow"
-                 alt="Image 3">
-        </div>
+footer a:hover {
+    color: white;
+}
 
-    </div>
-
-    <h3 class="mt-4">How to Reach</h3>
-    <p>
-        Location: <br>
-        Ticket: <br>
-        Best Time:
-    </p>
-
-</main>
-
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-    © 2024 Famous Palaces of India.
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-</html>
+/* Responsive */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 180px;
+    }
+}
