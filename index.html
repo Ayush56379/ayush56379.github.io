@@ -9,30 +9,13 @@
 
 <style>
 body { font-family: Arial, sans-serif; }
-
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
-}
-
-.card {
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.search-box {
-    max-width: 400px;
-    margin: 20px auto;
-}
-
-footer {
-    background: #222;
-    color: white;
-    padding: 20px 0;
-}
+.card-img-top { height: 200px; object-fit: cover; }
+.card { transition: 0.3s; }
+.card:hover { transform: translateY(-5px); }
+.search-box { max-width: 400px; margin: 20px auto; }
+footer { background:#222; color:#fff; padding:20px 0; }
+footer a { color:#fff; text-decoration:none; }
+footer a:hover { text-decoration:underline; }
 </style>
 </head>
 
@@ -45,20 +28,18 @@ footer {
 
 <div class="container">
 
-<!-- Search Bar -->
 <div class="search-box">
 <input type="text" id="searchInput" class="form-control" placeholder="Search palace...">
 </div>
 
 <h2 class="mb-4">Indian Palaces</h2>
 
-<div class="row" id="palaceList">
+<div class="row">
 
-<!-- CARD TEMPLATE START -->
-
+<!-- 1 -->
 <div class="col-md-4 mb-4 palace-card">
 <div class="card h-100 shadow-sm">
-<img src="images/amber-fort.jpg" class="card-img-top" alt="Amber Fort">
+<img src="images/amber1.jpg" class="card-img-top" alt="Amber Fort">
 <div class="card-body">
 <h5 class="card-title">Amber Fort</h5>
 <p class="card-text small text-muted">Rajput palace in Jaipur famous for Sheesh Mahal.</p>
@@ -67,119 +48,130 @@ footer {
 </div>
 </div>
 
+<!-- 2 -->
 <div class="col-md-4 mb-4 palace-card">
 <div class="card h-100 shadow-sm">
-<img src="images/red-fort.jpg" class="card-img-top" alt="Red Fort">
+<img src="images/red1.jpg" class="card-img-top" alt="Red Fort">
 <div class="card-body">
 <h5 class="card-title">Red Fort</h5>
-<p class="card-text small text-muted">Historic Mughal fort in Delhi built by Shah Jahan.</p>
+<p class="card-text small text-muted">Historic Mughal fort in Delhi.</p>
 <a href="red-fort.html" class="btn btn-primary btn-sm">Read More</a>
 </div>
 </div>
 </div>
 
+<!-- 3 -->
 <div class="col-md-4 mb-4 palace-card">
 <div class="card h-100 shadow-sm">
-<img src="images/mysore-palace.jpg" class="card-img-top" alt="Mysore Palace">
+<img src="images/mysore-palace1.jpg" class="card-img-top" alt="Mysore Palace">
 <div class="card-body">
 <h5 class="card-title">Mysore Palace</h5>
-<p class="card-text small text-muted">Grand Indo-Saracenic palace in Karnataka.</p>
+<p class="card-text small text-muted">Grand palace in Karnataka.</p>
 <a href="mysore-palace.html" class="btn btn-primary btn-sm">Read More</a>
 </div>
 </div>
 </div>
 
+<!-- 4 -->
 <div class="col-md-4 mb-4 palace-card">
 <div class="card h-100 shadow-sm">
-<img src="images/mehrangarh-fort.jpg" class="card-img-top" alt="Mehrangarh Fort">
+<img src="images/mehrangarh-fort1.jpg" class="card-img-top" alt="Mehrangarh Fort">
 <div class="card-body">
 <h5 class="card-title">Mehrangarh Fort</h5>
-<p class="card-text small text-muted">Massive hill fort in Jodhpur, Rajasthan.</p>
+<p class="card-text small text-muted">Massive hill fort in Jodhpur.</p>
 <a href="mehrangarh-fort.html" class="btn btn-primary btn-sm">Read More</a>
 </div>
 </div>
 </div>
 
+<!-- 5 -->
 <div class="col-md-4 mb-4 palace-card">
 <div class="card h-100 shadow-sm">
-<img src="images/city-palace-jaipur.jpg" class="card-img-top" alt="City Palace Jaipur">
+<img src="images/city-palace-jaipur1.jpg" class="card-img-top" alt="City Palace Jaipur">
 <div class="card-body">
 <h5 class="card-title">City Palace Jaipur</h5>
-<p class="card-text small text-muted">Royal residence of Jaipur’s Maharaja.</p>
+<p class="card-text small text-muted">Royal residence of Jaipur Maharaja.</p>
 <a href="city-palace-jaipur.html" class="btn btn-primary btn-sm">Read More</a>
 </div>
 </div>
 </div>
 
+<!-- 6 -->
 <div class="col-md-4 mb-4 palace-card">
 <div class="card h-100 shadow-sm">
-<img src="images/jaigarh-fort.jpg" class="card-img-top" alt="Jaigarh Fort">
+<img src="images/jaigarh-fort1.jpg" class="card-img-top" alt="Jaigarh Fort">
 <div class="card-body">
 <h5 class="card-title">Jaigarh Fort</h5>
-<p class="card-text small text-muted">Home to the world’s largest cannon.</p>
+<p class="card-text small text-muted">Home to the world's largest cannon.</p>
 <a href="jaigarh-fort.html" class="btn btn-primary btn-sm">Read More</a>
 </div>
 </div>
 </div>
 
+<!-- 7 -->
 <div class="col-md-4 mb-4 palace-card">
 <div class="card h-100 shadow-sm">
-<img src="images/nahargarh-fort.jpg" class="card-img-top" alt="Nahargarh Fort">
+<img src="images/nahargarh-fort1.jpg" class="card-img-top" alt="Nahargarh Fort">
 <div class="card-body">
 <h5 class="card-title">Nahargarh Fort</h5>
-<p class="card-text small text-muted">Hill fort overlooking Jaipur city.</p>
+<p class="card-text small text-muted">Hill fort overlooking Jaipur.</p>
 <a href="nahargarh-fort.html" class="btn btn-primary btn-sm">Read More</a>
 </div>
 </div>
 </div>
 
+<!-- 8 -->
 <div class="col-md-4 mb-4 palace-card">
 <div class="card h-100 shadow-sm">
-<img src="images/chittorgarh-fort.jpg" class="card-img-top" alt="Chittorgarh Fort">
+<img src="images/chittorgarh-fort1.jpg" class="card-img-top" alt="Chittorgarh Fort">
 <div class="card-body">
 <h5 class="card-title">Chittorgarh Fort</h5>
-<p class="card-text small text-muted">India’s largest fort in Rajasthan.</p>
+<p class="card-text small text-muted">Largest fort in India.</p>
 <a href="chittorgarh-fort.html" class="btn btn-primary btn-sm">Read More</a>
 </div>
 </div>
 </div>
 
+<!-- 9 -->
 <div class="col-md-4 mb-4 palace-card">
 <div class="card h-100 shadow-sm">
-<img src="images/kumbhalgarh-fort.jpg" class="card-img-top" alt="Kumbhalgarh Fort">
+<img src="images/kumbhalgarh-fort1.jpg" class="card-img-top" alt="Kumbhalgarh Fort">
 <div class="card-body">
 <h5 class="card-title">Kumbhalgarh Fort</h5>
-<p class="card-text small text-muted">Second largest fort with massive walls.</p>
+<p class="card-text small text-muted">Fort with massive walls.</p>
 <a href="kumbhalgarh-fort.html" class="btn btn-primary btn-sm">Read More</a>
 </div>
 </div>
 </div>
 
+<!-- 10 -->
 <div class="col-md-4 mb-4 palace-card">
 <div class="card h-100 shadow-sm">
-<img src="images/golconda-fort.jpg" class="card-img-top" alt="Golconda Fort">
+<img src="images/golconda-fort1.jpg" class="card-img-top" alt="Golconda Fort">
 <div class="card-body">
 <h5 class="card-title">Golconda Fort</h5>
-<p class="card-text small text-muted">Famous for diamond trade and acoustics.</p>
+<p class="card-text small text-muted">Famous for diamonds and acoustics.</p>
 <a href="golconda-fort.html" class="btn btn-primary btn-sm">Read More</a>
 </div>
 </div>
 </div>
 
+<!-- 11 -->
 <div class="col-md-4 mb-4 palace-card">
 <div class="card h-100 shadow-sm">
-<img src="images/hampi-palaces.jpg" class="card-img-top" alt="Hampi Palaces">
+<img src="images/hampi-palaces1.jpg" class="card-img-top" alt="Hampi Palaces">
 <div class="card-body">
 <h5 class="card-title">Hampi Palaces</h5>
-<p class="card-text small text-muted">Vijayanagara ruins and stone chariots.</p>
+<p class="card-text small text-muted">Vijayanagara ruins complex.</p>
 <a href="hampi-palaces.html" class="btn btn-primary btn-sm">Read More</a>
 </div>
 </div>
 </div>
 
+<!-- 12 -->
 <div class="col-md-4 mb-4 palace-card">
 <div class="card h-100 shadow-sm">
-<img src="images/agra-fort.jpg" class="card-img-top" alt="Agra Fort">
+<img src="images/agra-fort1.jpg" class="card-img-top" alt="Agra Fort">
 <div class="card-body">
 <h5 class="card-title">Agra Fort</h5>
 <p class="card-text small text-muted">Mughal fort near Taj Mahal.</p>
@@ -188,9 +180,10 @@ footer {
 </div>
 </div>
 
+<!-- 13 -->
 <div class="col-md-4 mb-4 palace-card">
 <div class="card h-100 shadow-sm">
-<img src="images/humayuns-tomb.jpg" class="card-img-top" alt="Humayun's Tomb">
+<img src="images/humayuns-tomb1.jpg" class="card-img-top" alt="Humayun's Tomb">
 <div class="card-body">
 <h5 class="card-title">Humayun's Tomb</h5>
 <p class="card-text small text-muted">Mughal mausoleum in Delhi.</p>
@@ -199,9 +192,10 @@ footer {
 </div>
 </div>
 
+<!-- 14 -->
 <div class="col-md-4 mb-4 palace-card">
 <div class="card h-100 shadow-sm">
-<img src="images/victoria-memorial.jpg" class="card-img-top" alt="Victoria Memorial">
+<img src="images/victoria-memorial1.jpg" class="card-img-top" alt="Victoria Memorial">
 <div class="card-body">
 <h5 class="card-title">Victoria Memorial</h5>
 <p class="card-text small text-muted">Marble palace in Kolkata.</p>
@@ -210,42 +204,46 @@ footer {
 </div>
 </div>
 
+<!-- 15 -->
 <div class="col-md-4 mb-4 palace-card">
 <div class="card h-100 shadow-sm">
-<img src="images/gwalior-fort.jpg" class="card-img-top" alt="Gwalior Fort">
+<img src="images/gwalior-fort1.jpg" class="card-img-top" alt="Gwalior Fort">
 <div class="card-body">
 <h5 class="card-title">Gwalior Fort</h5>
-<p class="card-text small text-muted">Hill fort in Madhya Pradesh.</p>
+<p class="card-text small text-muted">Historic hill fort in MP.</p>
 <a href="gwalior-fort.html" class="btn btn-primary btn-sm">Read More</a>
 </div>
 </div>
 </div>
 
+<!-- 16 -->
 <div class="col-md-4 mb-4 palace-card">
 <div class="card h-100 shadow-sm">
-<img src="images/orchha-fort.jpg" class="card-img-top" alt="Orchha Fort">
+<img src="images/orchha-fort1.jpg" class="card-img-top" alt="Orchha Fort">
 <div class="card-body">
 <h5 class="card-title">Orchha Fort</h5>
-<p class="card-text small text-muted">Bundela palace complex in MP.</p>
+<p class="card-text small text-muted">Bundela palace complex.</p>
 <a href="orchha-fort.html" class="btn btn-primary btn-sm">Read More</a>
 </div>
 </div>
 </div>
 
+<!-- 17 -->
 <div class="col-md-4 mb-4 palace-card">
 <div class="card h-100 shadow-sm">
-<img src="images/khajuraho-temples.jpg" class="card-img-top" alt="Khajuraho Temples">
+<img src="images/khajuraho-temples1.jpg" class="card-img-top" alt="Khajuraho Temples">
 <div class="card-body">
 <h5 class="card-title">Khajuraho Temples</h5>
-<p class="card-text small text-muted">UNESCO site with stone carvings.</p>
+<p class="card-text small text-muted">UNESCO heritage temples.</p>
 <a href="khajuraho-temples.html" class="btn btn-primary btn-sm">Read More</a>
 </div>
 </div>
 </div>
 
+<!-- 18 -->
 <div class="col-md-4 mb-4 palace-card">
 <div class="card h-100 shadow-sm">
-<img src="images/patiala-fort.jpg" class="card-img-top" alt="Patiala Fort">
+<img src="images/patiala-fort1.jpg" class="card-img-top" alt="Patiala Fort">
 <div class="card-body">
 <h5 class="card-title">Patiala Fort</h5>
 <p class="card-text small text-muted">Sikh fort known as Qila Mubarak.</p>
@@ -254,9 +252,10 @@ footer {
 </div>
 </div>
 
+<!-- 19 -->
 <div class="col-md-4 mb-4 palace-card">
 <div class="card h-100 shadow-sm">
-<img src="images/kangra-fort.jpg" class="card-img-top" alt="Kangra Fort">
+<img src="images/kangra-fort1.jpg" class="card-img-top" alt="Kangra Fort">
 <div class="card-body">
 <h5 class="card-title">Kangra Fort</h5>
 <p class="card-text small text-muted">Ancient fort in Himachal Pradesh.</p>
@@ -265,18 +264,16 @@ footer {
 </div>
 </div>
 
-<!-- CARD TEMPLATE END -->
-
 </div>
 </div>
 
 <footer class="text-center mt-5">
 <p>© 2024 Famous Palaces of India</p>
 <p>
-<a href="about.html" class="text-white">About</a> |
-<a href="contact.html" class="text-white">Contact</a> |
-<a href="privacy-policy.html" class="text-white">Privacy Policy</a> |
-<a href="disclaimer.html" class="text-white">Disclaimer</a>
+<a href="about.html">About</a> |
+<a href="contact.html">Contact</a> |
+<a href="privacy-policy.html">Privacy Policy</a> |
+<a href="disclaimer.html">Disclaimer</a>
 </p>
 <p>Email: ayushfreelancer@gmail.com</p>
 </footer>
