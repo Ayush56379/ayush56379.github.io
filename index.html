@@ -1,70 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Famous Palaces of India</title>
 
+<title>Famous Palaces of India | Explore Indian Forts & Heritage Sites</title>
+
+<meta name="description" content="Explore famous palaces of India including Amber Fort, Red Fort, Mysore Palace and more. History, images and travel guides.">
+<meta name="keywords" content="Indian palaces, forts of India, Amber Fort, Red Fort, Mysore Palace, Rajasthan forts">
+<meta name="author" content="Ayush Prajpati">
+
+<!-- SEO Open Graph -->
+<meta property="og:title" content="Famous Palaces of India">
+<meta property="og:description" content="Discover India's iconic forts and palaces with history and travel tips.">
+<meta property="og:type" content="website">
+
+<!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<!-- AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
 <style>
-body { font-family: Arial, sans-serif; }
 
-.card-img-top { 
-    height: 200px; 
-    object-fit: cover; 
+body {
+font-family: 'Poppins', sans-serif;
+scroll-behavior: smooth;
 }
 
-.card { 
-    transition: 0.3s; 
-    border-radius: 10px;
+/* HERO SECTION */
+.hero {
+background: url('images/amber1.jpg') center/cover no-repeat;
+height: 60vh;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+text-align: center;
+position: relative;
 }
 
-.card:hover { 
-    transform: translateY(-5px); 
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+.hero::after {
+content:"";
+position:absolute;
+top:0; left:0;
+width:100%; height:100%;
+background: rgba(0,0,0,0.6);
 }
 
-.search-box { 
-    max-width: 400px; 
-    margin: 20px auto; 
+.hero-content {
+position:relative;
+z-index:2;
+animation: fadeIn 2s ease-in-out;
 }
 
-footer { 
-    background:#222; 
-    color:#fff; 
-    padding:20px 0; 
+@keyframes fadeIn {
+from { opacity:0; transform:translateY(20px); }
+to { opacity:1; transform:translateY(0); }
 }
 
-footer a { 
-    color:#fff; 
-    text-decoration:none; 
+/* Sticky Navbar */
+.navbar {
+box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-footer a:hover { 
-    text-decoration:underline; 
+/* Cards */
+.card-img-top { height: 200px; object-fit: cover; }
+.card { transition: 0.4s; }
+.card:hover { transform: translateY(-8px); }
+
+/* Search */
+.search-box { max-width: 400px; margin: 30px auto; }
+
+/* Footer */
+footer {
+background:#111;
+color:#fff;
+padding:30px 0;
 }
 
-.navbar { 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-}
+footer a { color:#fff; text-decoration:none; }
+footer a:hover { text-decoration:underline; }
+
 </style>
 </head>
 
 <body>
 
-<!-- MENU NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- STICKY NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 <div class="container">
-<a class="navbar-brand" href="index.html">Indian Palaces</a>
+<a class="navbar-brand fw-bold" href="#">Indian Palaces</a>
 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
 <span class="navbar-toggler-icon"></span>
 </button>
 
-<div class="collapse navbar-collapse" id="navbarMenu">
+<div class="collapse navbar-collapse" id="menu">
 <ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 <li class="nav-item"><a class="nav-link" href="privacy-policy.html">Privacy Policy</a></li>
@@ -74,106 +112,38 @@ footer a:hover {
 </div>
 </nav>
 
-<header class="bg-primary text-white text-center py-4">
-<h1>Famous Palaces of India</h1>
-<p>Discover India's iconic forts and palaces with history and travel tips.</p>
-</header>
+<!-- HERO SECTION -->
+<section class="hero">
+<div class="hero-content">
+<h1 class="display-4 fw-bold">Famous Palaces of India</h1>
+<p>Explore India's Historic Forts & Royal Heritage</p>
+</div>
+</section>
 
 <div class="container">
 
+<!-- AdSense Top Placement -->
+<div class="text-center my-4">
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+data-ad-slot="1234567890"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<!-- Search -->
 <div class="search-box">
 <input type="text" id="searchInput" class="form-control" placeholder="Search palace...">
 </div>
 
-<h2 class="mb-4">Indian Palaces</h2>
+<h2 class="mb-4 text-center">Indian Palaces</h2>
 
 <div class="row">
 
-<!-- 1 -->
-<div class="col-md-4 mb-4 palace-card">
-<div class="card h-100 shadow-sm">
-<img src="images/amber1.jpg" class="card-img-top" alt="Amber Fort">
-<div class="card-body">
-<h5 class="card-title">Amber Fort</h5>
-<p class="card-text small text-muted">Rajput palace in Jaipur famous for Sheesh Mahal.</p>
-<a href="amber-fort.html" class="btn btn-primary btn-sm">Read More</a>
-</div>
-</div>
-</div>
-
-<!-- 2 -->
-<div class="col-md-4 mb-4 palace-card">
-<div class="card h-100 shadow-sm">
-<img src="images/red1.jpg" class="card-img-top" alt="Red Fort">
-<div class="card-body">
-<h5 class="card-title">Red Fort</h5>
-<p class="card-text small text-muted">Historic Mughal fort in Delhi.</p>
-<a href="red-fort.html" class="btn btn-primary btn-sm">Read More</a>
-</div>
-</div>
-</div>
-
-<!-- 3 -->
-<div class="col-md-4 mb-4 palace-card">
-<div class="card h-100 shadow-sm">
-<img src="images/mysore-palace1.jpg" class="card-img-top" alt="Mysore Palace">
-<div class="card-body">
-<h5 class="card-title">Mysore Palace</h5>
-<p class="card-text small text-muted">Grand palace in Karnataka.</p>
-<a href="mysore-palace.html" class="btn btn-primary btn-sm">Read More</a>
-</div>
-</div>
-</div>
-
-<!-- 4 -->
-<div class="col-md-4 mb-4 palace-card">
-<div class="card h-100 shadow-sm">
-<img src="images/mehrangarh-fort1.jpg" class="card-img-top" alt="Mehrangarh Fort">
-<div class="card-body">
-<h5 class="card-title">Mehrangarh Fort</h5>
-<p class="card-text small text-muted">Massive hill fort in Jodhpur.</p>
-<a href="mehrangarh-fort.html" class="btn btn-primary btn-sm">Read More</a>
-</div>
-</div>
-</div>
-
-<!-- 5 -->
-<div class="col-md-4 mb-4 palace-card">
-<div class="card h-100 shadow-sm">
-<img src="images/city-palace-jaipur1.jpg" class="card-img-top" alt="City Palace Jaipur">
-<div class="card-body">
-<h5 class="card-title">City Palace Jaipur</h5>
-<p class="card-text small text-muted">Royal residence of Jaipur Maharaja.</p>
-<a href="city-palace-jaipur.html" class="btn btn-primary btn-sm">Read More</a>
-</div>
-</div>
-</div>
-
-<!-- 6 -->
-<div class="col-md-4 mb-4 palace-card">
-<div class="card h-100 shadow-sm">
-<img src="images/jaigarh-fort1.jpg" class="card-img-top" alt="Jaigarh Fort">
-<div class="card-body">
-<h5 class="card-title">Jaigarh Fort</h5>
-<p class="card-text small text-muted">Home to the world's largest cannon.</p>
-<a href="jaigarh-fort.html" class="btn btn-primary btn-sm">Read More</a>
-</div>
-</div>
-</div>
-
-<!-- 7 -->
-<div class="col-md-4 mb-4 palace-card">
-<div class="card h-100 shadow-sm">
-<img src="images/nahargarh-fort1.jpg" class="card-img-top" alt="Nahargarh Fort">
-<div class="card-body">
-<h5 class="card-title">Nahargarh Fort</h5>
-<p class="card-text small text-muted">Hill fort overlooking Jaipur.</p>
-<a href="nahargarh-fort.html" class="btn btn-primary btn-sm">Read More</a>
-</div>
-</div>
-</div>
-
-<!-- (Baaki cards exactly same continue rahenge — tumhare original jaise) -->
+<!-- ⚠️ YOUR 19 CARDS SAME AS BEFORE – DO NOT CHANGE -->
+<!-- Paste your existing 19 palace cards here exactly same -->
 
 </div>
 </div>
@@ -193,12 +163,12 @@ footer a:hover {
 
 <script>
 document.getElementById('searchInput').addEventListener('keyup', function() {
-    let value = this.value.toLowerCase();
-    let cards = document.querySelectorAll('.palace-card');
-    cards.forEach(function(card) {
-        let text = card.innerText.toLowerCase();
-        card.style.display = text.includes(value) ? '' : 'none';
-    });
+let value = this.value.toLowerCase();
+let cards = document.querySelectorAll('.palace-card');
+cards.forEach(function(card) {
+let text = card.innerText.toLowerCase();
+card.style.display = text.includes(value) ? '' : 'none';
+});
 });
 </script>
 
