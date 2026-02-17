@@ -1,126 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Famous Palaces of India | Explore Indian Forts & Heritage Sites</title>
-
-<meta name="description" content="Explore famous palaces of India including Amber Fort, Red Fort, Mysore Palace and more. History, images and travel guides.">
-<meta name="keywords" content="Indian palaces, forts of India, Amber Fort, Red Fort, Mysore Palace, Rajasthan forts">
+<title>Famous Palaces of India | History & Travel Guide</title>
+<meta name="description" content="Explore famous palaces and forts of India with history, images and travel tips.">
+<meta name="keywords" content="Indian Palaces, Famous Forts, Amber Fort, Red Fort, Mysore Palace">
 <meta name="author" content="Ayush Prajpati">
 
-<!-- SEO Open Graph -->
-<meta property="og:title" content="Famous Palaces of India">
-<meta property="og:description" content="Discover India's iconic forts and palaces with history and travel tips.">
-<meta property="og:type" content="website">
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+crossorigin="anonymous"></script>
 
-<!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-<!-- AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
-
 <style>
-
-body {
-font-family: 'Poppins', sans-serif;
-scroll-behavior: smooth;
-}
-
-/* HERO SECTION */
-.hero {
-background: url('images/amber1.jpg') center/cover no-repeat;
-height: 60vh;
-display: flex;
-align-items: center;
-justify-content: center;
-color: white;
-text-align: center;
-position: relative;
-}
-
-.hero::after {
-content:"";
-position:absolute;
-top:0; left:0;
-width:100%; height:100%;
-background: rgba(0,0,0,0.6);
-}
-
-.hero-content {
-position:relative;
-z-index:2;
-animation: fadeIn 2s ease-in-out;
-}
-
-@keyframes fadeIn {
-from { opacity:0; transform:translateY(20px); }
-to { opacity:1; transform:translateY(0); }
-}
+body { font-family: Arial, sans-serif; scroll-behavior:smooth; }
 
 /* Sticky Navbar */
 .navbar {
-box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+position: sticky;
+top: 0;
+z-index: 1000;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Cards */
+/* Hero Section */
+.hero {
+background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('images/amber1.jpg') center/cover no-repeat;
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
 .card-img-top { height: 200px; object-fit: cover; }
-.card { transition: 0.4s; }
-.card:hover { transform: translateY(-8px); }
 
-/* Search */
-.search-box { max-width: 400px; margin: 30px auto; }
-
-/* Footer */
-footer {
-background:#111;
-color:#fff;
-padding:30px 0;
+.card {
+transition: 0.3s;
 }
 
-footer a { color:#fff; text-decoration:none; }
-footer a:hover { text-decoration:underline; }
+.card:hover {
+transform: translateY(-5px);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
 
+.search-box { max-width: 400px; margin: 20px auto; }
+
+footer {
+background:#222;
+color:#fff;
+padding:20px 0;
+}
+
+footer a {
+color:#fff;
+text-decoration:none;
+}
+
+footer a:hover {
+text-decoration:underline;
+}
 </style>
 </head>
 
 <body>
 
-<!-- STICKY NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
 <div class="container">
 <a class="navbar-brand fw-bold" href="#">Indian Palaces</a>
 
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 <span class="navbar-toggler-icon"></span>
 </button>
 
-<div class="collapse navbar-collapse" id="menu">
+<div class="collapse navbar-collapse" id="navbarNav">
 <ul class="navbar-nav ms-auto">
 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
 <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-<li class="nav-item"><a class="nav-link" href="privacy-policy.html">Privacy Policy</a></li>
-<li class="nav-item"><a class="nav-link" href="disclaimer.html">Disclaimer</a></li>
 </ul>
 </div>
 </div>
 </nav>
 
-<!-- HERO SECTION -->
-<section class="hero">
-<div class="hero-content">
-<h1 class="display-4 fw-bold">Famous Palaces of India</h1>
-<p>Explore India's Historic Forts & Royal Heritage</p>
+<!-- HERO -->
+<div class="hero">
+<h1>Famous Palaces of India</h1>
+<p>Discover India's iconic forts and palaces with history and travel tips.</p>
 </div>
-</section>
 
 <div class="container">
+
+<div class="search-box">
+<input type="text" id="searchInput" class="form-control" placeholder="Search palace...">
+</div>
+
+<h2 class="mb-4">Indian Palaces</h2>
 
 <!-- AdSense Top Placement -->
 <div class="text-center my-4">
@@ -130,20 +108,19 @@ data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
 data-ad-slot="1234567890"
 data-ad-format="auto"
 data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 </div>
-
-<!-- Search -->
-<div class="search-box">
-<input type="text" id="searchInput" class="form-control" placeholder="Search palace...">
-</div>
-
-<h2 class="mb-4 text-center">Indian Palaces</h2>
 
 <div class="row">
 
-<!-- ⚠️ YOUR 19 CARDS SAME AS BEFORE – DO NOT CHANGE -->
-<!-- Paste your existing 19 palace cards here exactly same -->
+<!-- 🔽🔽🔽 YOUR ORIGINAL 19 CARDS START (UNCHANGED) 🔽🔽🔽 -->
+
+<!-- KEEP YOUR COMPLETE 19 CARD SECTION EXACTLY HERE -->
+<!-- Do not remove anything from your existing cards -->
+
+<!-- 🔼🔼🔼 YOUR ORIGINAL 19 CARDS END 🔼🔼🔼 -->
 
 </div>
 </div>
@@ -159,8 +136,6 @@ data-full-width-responsive="true"></ins>
 <p>Email: ayushprajpati6@gmail.com</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 <script>
 document.getElementById('searchInput').addEventListener('keyup', function() {
 let value = this.value.toLowerCase();
@@ -171,6 +146,8 @@ card.style.display = text.includes(value) ? '' : 'none';
 });
 });
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
