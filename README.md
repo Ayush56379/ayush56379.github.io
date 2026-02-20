@@ -13,7 +13,7 @@ Famous Palaces of India is an informational website that provides detailed histo
 ## Website
 
 Visit Website:
-https://ayush56379.github.io/IndianPalaces/
+https://ayush56379.github.io/
 
 ## Author
 
